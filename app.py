@@ -4,7 +4,7 @@ from flask import make_response
 app = Flask(__name__)
 @app.route('/')
 def home():
-    return "Hello World! I am good"
+    return "Hello World"
 @app.route('/<page_name>')
 def other_page(page_name):
     response = make_response('The page named %s does not exist.' \
